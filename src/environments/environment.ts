@@ -3,7 +3,15 @@
 // `ng build --env=prod` then `environment.prod.ts` will be used instead.
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: 'AIzaSyBzsUmP7MkXyYkZbfJUMPwC5DArH5xMUo0',
+    authDomain: 'petindo-app-91a60.firebaseapp.com',
+    databaseURL: 'https://petindo-app-91a60.firebaseio.com',
+    projectId: 'petindo-app-91a60',
+    storageBucket: 'petindo-app-91a60.appspot.com',
+    messagingSenderId: '83820565641'
+  }
 };
 
 /*
