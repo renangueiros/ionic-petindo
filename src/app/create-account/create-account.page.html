@@ -1,9 +1,27 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>create-account</ion-title>
+    <ion-title>Criar conta</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
 
+  <form [formGroup]="criarContaForm" (ngSubmit)="onCriarConta()">
+    <ion-item no-padding>
+      <ion-label position="stacked">Email</ion-label>
+      <ion-input placeholder="Endereço de email" type="email" formControlName="email"></ion-input>
+    </ion-item>
+    <ion-item no-padding>
+      <ion-label position="stacked">Senha</ion-label>
+      <ion-input placeholder="Senha" type="password" formControlName="senha"></ion-input>
+    </ion-item>
+    <ion-button expand="full" type="submit" margin-top>Criar conta</ion-button>
+  </form>
+
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar color="primary">
+    <ion-button color="light" fill="clear" expand="full" href="/login">Entrar no Petindo</ion-button>
+  </ion-toolbar>
+</ion-footer>
